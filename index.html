@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unplanned Vignette | THE UNIVERSAL DEV</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="Unplanned-vignette.png" type="image/png">
+<!-- loader css and script -->
+<style>
+  #preloader {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: 100;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #preloader img {
+    width: 300px;
+  }
+  #fullpagecontent {
+    display: none;
+  }
+</style>
+<script>
+  window.onload = function () {
+    document.getElementById('preloader').style.display = "none";
+    document.getElementById('fullpagecontent').style.display = "block";
+  }
+  </script>
+</head>
+<body>
+<div id="preloader">
+  <img src="gif.gif" alt="loader">
+</div>
+<!-- this is loader div for content -->
+<div id="fullpagecontent">
+    <div class="PC">
+        <img src="https://source.unsplash.com/1920x1080/?Random,Tech,Chemistry,Homes,Birds,Library,Medical,Tech,Pets,View,Homes,Garden,Mountain,Sounds,sportscars,snow,books," alt="A Random Image">
+    </div>
+    <div class="phone">
+        <img src="https://source.unsplash.com/500x900/?Tech,Pets,View,Homes,Garden,Mountain,Sounds,sportscars,Random,Chemistry,Birds,Library,Medical,Random,View,snow,books," alt="A Random Image">
+    </div>
+    <footer>
+        <div>
+          <!-- <a target="_blank" href=""><h3>About</h3></a> -->
+            <span>&copy; 2021-<script>document.write("" + new Date().getFullYear(), "");</script> Unplanned Vignette<br>All Rights Reserved.</span>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
+document.onkeydown = function (e) {
+  if (event.keycode == 123) {
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+    return false;
+  }
+}
+</script>
+</div>
+</body>
+</html>
